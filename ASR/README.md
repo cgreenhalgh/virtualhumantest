@@ -1,5 +1,9 @@
 # Kaldi ASR
 
+## With AVP
+
+Bundled/configured version in ARIA-System repo under ASR/
+
 try enable 3D  accel. max display mem, 
 
 setup (in Vagrantfile)
@@ -17,3 +21,10 @@ cd run
 chmod a+x *.sh
 ./launch.sh
 ```
+
+## General
+
+git clone https://github.com/kaldi-asr/kaldi.git kaldi --origin upstream
+
+>  Kaldi supports cross compiling for Android using Android NDK, clang++ and OpenBLAS.
+See [this blog post](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/)

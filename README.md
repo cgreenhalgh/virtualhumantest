@@ -70,4 +70,10 @@ https://dev.azure.com/MariaGalvezTrigo/AVP_bundle_installer
 
 Seem to be missing executables of most things cf ARIA-System repo
 
- 
+## Android notes
+
+SSI has an Android analogue, [SSJ](https://github.com/hcmlab/ssj)
+
+Kaldi can be compiled for Android -
+see [this blog post](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/)
+
