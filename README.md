@@ -90,3 +90,18 @@ ASAP/Unity bridge
 
 Video
 - apparently on Mobile video cannot be used in textures, so how will we show the avatar alongside video?
+
+Unity (in particular UMA 2) seems to have its own skeleton/
+animation model, and it looks like these bridges have to do quite a
+lot of mapping to use the Unity model (i.e. its not MPEG4 standard).
+
+## Unity and Android notes
+
+Got VideoPlayer working in Android on far clip plane, 
+but that doesn't give any option to (e.g.) push it to one edge of the 
+screen, or make it smaller. Had to set Player Settings `Auto Graphics API` 
+to true to stop it crashing (trying to use Vulcan?).
+
+Not tried VideoPlayer into texture yet - I got the impression it 
+might not work, but perhaps that was about the old Video Texture support
+in Unity (or might be very slow).
