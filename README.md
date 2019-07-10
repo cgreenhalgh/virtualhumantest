@@ -51,8 +51,6 @@ Greta
 - Can be manually/by file assembled in “Modular” 
 - For AVP, graph is built and configured programmatically in eu.aria.output.Greta  
 - https://github.com/gretaproject/greta/blob/master/README.md 
-- Greta/Unity link appears to use Apache Thrift, https://thrift.apache.org/static/files/thrift-20070401.pdf (implied by documentation on Unity C# script, code not publicly accessible) 
-- In greta/auxiliary/Thrift 
 - (also has greta/auxiliary/ActiveMQ - used with ARIA) 
 - (some indication that initial unity support requires audio file of rendered audio for sync in unity) 
 
@@ -77,3 +75,18 @@ SSI has an Android analogue, [SSJ](https://github.com/hcmlab/ssj)
 Kaldi can be compiled for Android -
 see [this blog post](http://jcsilva.github.io/2017/03/18/compile-kaldi-android/)
 
+## Unity notes
+
+Grata:
+- Greta/Unity link appears to use Apache Thrift, https://thrift.apache.org/static/files/thrift-20070401.pdf (implied by documentation on Unity C# script, code not publicly accessible) 
+- In greta/auxiliary/Thrift 
+- Source for unity component requires SVN repo credentials (not known)
+
+ASAP/Unity bridge
+- "An ASAP Realizer-Unity3D Bridge for Virtual and Mixed Reality Applications" IVA 2017? [paper](https://merijnbruijnes.nl/wp-content/uploads/2017/09/Kolkmeier-et-al-2017-An-ASAP-Realizer-Unity3D-Bridge-for-Virtual-and.pdf)
+- [source](https://github.com/hmi-utwente/AsapUnityBridge)
+- depends on UMA 2 (tested w 2.6.1)
+- uses ActiveMQ "apollo" broker to communicate?!
+
+Video
+- apparently on Mobile video cannot be used in textures, so how will we show the avatar alongside video?
